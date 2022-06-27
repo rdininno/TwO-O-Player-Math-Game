@@ -2,11 +2,6 @@ require "./person"
 require "./question"
 
 class Game
-  @@game_over = false
-  def currentScore(currentPlayer, players)
-    puts "#{currentPlayer.name}: #{currentPlayer.displayScore} vs #{players[1].name}: #{players[1].displayScore}"
-  end
-
   def start(players)
     currentPlayer = players[0]
 
@@ -43,5 +38,9 @@ class Game
       players = players.reverse()
       start(players)
     end
+  end
+    
+  def currentScore(currentPlayer, players)
+    puts "#{currentPlayer.name}: #{currentPlayer.displayScore} vs #{players[1].name}: #{players[1].displayScore}"
   end
 end
