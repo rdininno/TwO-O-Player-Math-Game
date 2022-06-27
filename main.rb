@@ -8,7 +8,6 @@ class Main
   players = [player1, player2]
 
   game = Game.new
-  game.start(players)
-  
+  game.start(players) 
 end
 
