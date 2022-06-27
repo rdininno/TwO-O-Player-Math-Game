@@ -55,5 +55,5 @@ Game: Will start the game
   END
 
                   
-                * With two players we could just reverse the players array after each turn and keep using the player at [0] index
+                * With two players we could just reverse the players array after each turn and keep using the player at [0] index 
                 
