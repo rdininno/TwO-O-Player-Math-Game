@@ -7,11 +7,7 @@ class Question
     @answer = @number1 + @number2
   end
 
-  def displayQuestion
-    puts "What is #{@number1} plus #{@number2}?"
-  end
-
-  def answer
-    puts "the answer is #{@answer}"
+  def display
+    "What is #{@number1} plus #{@number2}?"
   end
 end
