@@ -14,6 +14,6 @@ class Person
   end
 
   def displayScore
-    puts "#{@name}: #{@score}/3"
+    "#{@score}/3"
   end
 end
