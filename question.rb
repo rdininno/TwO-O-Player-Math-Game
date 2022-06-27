@@ -15,7 +15,3 @@ class Question
     puts "the answer is #{@answer}"
   end
 end
-
-question1 = Question.new
-question1.displayQuestion
-question1.answer
