@@ -1,6 +1,8 @@
 class Person
   @@number_of_players = 0;
 
+  attr_accessor :name, :score
+
   def initialize 
     @@number_of_players += 1
     @name = "Player #{@@number_of_players}"
@@ -15,12 +17,3 @@ class Person
     puts "#{@name}: #{@score}/3"
   end
 end
-
-p robert = Person.new
-p thomas = Person.new
-
-p robert.loosePoint
-p robert
-
-robert.displayScore
-thomas.displayScore
