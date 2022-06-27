@@ -9,7 +9,10 @@ class Person
 
   def loosePoint
     @score -= 1
-    "#{@name} #{@score}/3"
+  end
+
+  def displayScore
+    puts "#{@name}: #{@score}/3"
   end
 end
 
@@ -18,3 +21,6 @@ p thomas = Person.new
 
 p robert.loosePoint
 p robert
+
+robert.displayScore
+thomas.displayScore
